@@ -115,7 +115,7 @@ python metrics.py -m output/Aqua
 
 产物在 `output/Aqua/`：`point_cloud/` 是训好的高斯模型，`test/ours_30000/renders/` 是测试视角渲染图（可与 `gt/` 对比），`train/ours_30000/fuse_post.ply` 是提取的 mesh，`results.json` 是指标。
 
-本机参考指标（Aqua，30k 迭代，测试集 13 帧）：见 goal_todo.md 阶段 2，跑完应与之接近。
+本机参考指标（Aqua，默认参数 30k 迭代，测试集 13 帧）：PSNR 31.53 / SSIM 0.984 / LPIPS 0.022，训练约 8 分钟。跑出来明显偏低说明环境或数据有问题，详见 goal_todo.md「Aqua 参考结果」。
 
 常用训练参数：`--lambda_normal`（法线一致性正则）、`--lambda_dist`（深度畸变正则）、`--depth_ratio`（0 均值深度 / 1 中值深度）、`-r 2`（半分辨率）。
 

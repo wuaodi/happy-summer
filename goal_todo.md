@@ -43,7 +43,7 @@
 
 ## 工作方式
 
-- 本仓库为私有仓库，需要访问权限的同学把 GitHub 用户名发给导师，接受邀请后即可 clone。
-- 分支模型：main 是稳定分支，不直接 push。每个任务从 main 拉一个 dev 分支（如 `dev/vis-poses`、`dev/mocap-capture`），完成后提 Pull Request，review 通过后合入 main。
+- 本仓库为公开仓库，实习生以协作者身份开发（接受邮件邀请后即有 push 权限）。
+- 分支模型：main 是稳定分支，受保护，不直接 push。实习生在 `dev_wgb` 分支上开发，每完成一个阶段性功能就从 `dev_wgb` 向 main 发 Pull Request，review 通过后合入；合并后记得把 main 同步回 `dev_wgb`（`git merge main`）再继续。
 - PR 描述里写清楚做了什么、为什么这么设计、怎么验证；review 意见在 PR 页面里讨论并留痕，改完再合。
 - commit 信息写清楚做了什么；实验记录及时写进 `experiments/experiments.md`。

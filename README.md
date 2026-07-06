@@ -8,9 +8,10 @@
 happy-summer/
 ├── 2d-gaussian-splatting/   # 官方 2DGS 代码（hbb1/2d-gaussian-splatting @ 335ad61）
 │   └── submodules/          # CUDA 扩展源码已内置（diff-surfel-rasterization、simple-knn），克隆无需 --recursive
-├── data/                    # 数据集（不入库，从百度网盘下载后放到这里）
+├── data/                    # 数据集（不入库，下载方式见 data_archive.md）
 │   └── Aqua/                # Aqua 卫星仿真数据（100 帧，Blender Cycles 渲染）
 ├── experiments/             # 实验记录（experiments.md，最新在前）与结果图片
+├── data_archive.md          # 数据归档说明（百度网盘位置、内容清单、解压方式）
 ├── goal_todo.md             # 实习任务清单
 └── README.md
 ```
@@ -19,7 +20,7 @@ happy-summer/
 
 `data/Aqua/` 是 NASA Aqua 卫星的绕飞仿真数据，Blender Cycles 路径追踪渲染，相机位姿是精确真值。
 
-百度网盘链接：（待填）
+下载方式见 [data_archive.md](data_archive.md)（百度网盘，zip 在仓库根目录解压即还原）。
 
 ```
 data/Aqua/

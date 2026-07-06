@@ -4,7 +4,7 @@
 
 ## 阶段 1：数据与位姿
 
-- [ ] 下载 Aqua 仿真数据放到 `data/Aqua/`（百度网盘链接：待填）
+- [ ] 下载 Aqua 仿真数据放到 `data/Aqua/`：百度网盘 https://pan.baidu.com/s/1L3qEJTk3aY--wEjM5jBgdw 提取码 kdqg，zip 放仓库根目录解压即还原，详见 `data_archive.md`
 - [ ] 读懂数据格式：`transforms_train.json` 里每帧的 `transform_matrix` 是 c2w（OpenGL 约定，相机看 -Z、up +Y），`camera_angle_x` 换算焦距，alpha 通道是前景 mask，具体见 README「数据说明」
 - [ ] 写一个脚本可视化 100 帧相机位姿真值：画出相机在球面上的位置分布和朝向（matplotlib 3D 或 open3d 都行），确认相机都朝向原点、覆盖大半个球面。脚本放 `scripts/` 并提交
 
@@ -38,8 +38,6 @@
 | PSNR | SSIM | LPIPS | 训练用时 |
 |---|---|---|---|
 | 31.53 | 0.984 | 0.022 | 约 8 分钟 |
-
-一个值得思考的现象：7k 迭代时测试 PSNR 有 35.9，30k 反而降到 31.7。这不是 bug——2DGS 在训练中后段开启了深度畸变和法线一致性正则，用一部分光度精度换几何质量（mesh 更干净）。读论文时可以结合这个现象理解两个正则的作用。
 
 ## 工作方式
 

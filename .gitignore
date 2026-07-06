@@ -1,0 +1,16 @@
+# 数据集不入库（放百度网盘）
+data/
+
+# 训练产物
+2d-gaussian-splatting/output/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+
+# 编辑器
+.vscode/
+.idea/

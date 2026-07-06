@@ -10,6 +10,8 @@ unzip data_Aqua_20260706.zip     # 解压出 data/Aqua/
 
 百度网盘 `Alvin/git大文件/happy-summer_archive/`
 
+分享链接：https://pan.baidu.com/s/1L3qEJTk3aY--wEjM5jBgdw 提取码：kdqg
+
 ## 内容清单
 
 | zip 名称 | 内容 | 大小 |

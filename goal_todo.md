@@ -4,7 +4,7 @@
 
 ## 阶段 1：数据与位姿
 
-- [ ] 下载 Aqua 仿真数据放到 `data/Aqua/`（百度网盘链接：待填）
+- [ ] 下载 Aqua 仿真数据放到 `data/Aqua/`（下载与解压方式见 `data_archive.md`）
 - [ ] 读懂数据格式：`transforms_train.json` 里每帧的 `transform_matrix` 是 c2w（OpenGL 约定，相机看 -Z、up +Y），`camera_angle_x` 换算焦距，alpha 通道是前景 mask，具体见 README「数据说明」
 - [ ] 写一个脚本可视化 100 帧相机位姿真值：画出相机在球面上的位置分布和朝向（matplotlib 3D 或 open3d 都行），确认相机都朝向原点、覆盖大半个球面。脚本放 `scripts/` 并提交
 

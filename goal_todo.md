@@ -43,5 +43,7 @@
 
 ## 工作方式
 
-- 代码用 GitHub 管理：从 main 拉功能分支开发，完成后提 Pull Request，导师 review 通过后合入 main，不直接 push main。
+- 本仓库为私有仓库，需要访问权限的同学把 GitHub 用户名发给导师，接受邀请后即可 clone。
+- 分支模型：main 是稳定分支，不直接 push。每个任务从 main 拉一个 dev 分支（如 `dev/vis-poses`、`dev/mocap-capture`），完成后提 Pull Request，review 通过后合入 main。
+- PR 描述里写清楚做了什么、为什么这么设计、怎么验证；review 意见在 PR 页面里讨论并留痕，改完再合。
 - commit 信息写清楚做了什么；实验记录及时写进 `experiments/experiments.md`。

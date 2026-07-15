@@ -1,5 +1,6 @@
-# 数据集不入库（放百度网盘）
+# 数据集不入库（放百度网盘，见 data_archive.md）
 data/
+*.zip
 
 # 训练产物
 2d-gaussian-splatting/output/
